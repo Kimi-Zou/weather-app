@@ -1,0 +1,17 @@
+.weather__navs {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.weather__nav {
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.weather__nav--active {
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}

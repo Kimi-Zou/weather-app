@@ -1,4 +1,4 @@
-const CURRENT_LOCATION = 'location/currentLocation';
+const CURRENT_LOCATION = "location/currentLocation";
 
 export const setCurrentLocation = (location) => ({
   type: CURRENT_LOCATION,

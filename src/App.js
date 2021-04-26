@@ -1,18 +1,28 @@
-import { useState } from 'react';
-import './App.css';
-import Search from './components/Search';
-import CurrentLocation from './components/CurrentLocation';
+import { useState } from "react";
+import "./App.css";
+import Search from "./components/Search";
+import CurrentLocation from "./components/CurrentLocation";
+import WeekForecast from "./components/WeatherWeekForecast";
+import TodayForecast from "./components/WeatherTodayForecast";
+import WeatherNav from "./components/WeatherNav";
 
 function App() {
-  const [showWeek, setShowWeek] = useState(false);
+  const [showToday, setShowToday] = useState(true);
 
   return (
-    <div className="App">
+    <div className="app__wrapper">
       <section className="location">
         <Search />
         <CurrentLocation />
       </section>
-      <section className="weather"></section>
+      <section className="weather">
+        <WeatherNav showToday={showToday} setShowToday={setShowToday} />
+        {
+          showToday ?
+          <TodayForecast /> :
+          <WeekForecast />
+        }
+      </section>
     </div>
   );
 }
