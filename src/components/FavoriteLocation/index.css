@@ -1,0 +1,37 @@
+.fav-locations__wrapper {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80%;
+  border-bottom: 1px solid gray;
+}
+
+.fav-locations__label {
+  color: white;
+}
+
+/* fav location list */
+.fav-locations__list {
+  padding-inline-start: 0px;
+}
+
+.fav-location__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fav-location {
+  list-style-type: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.fav-location__remove-btn {
+  color: #333;
+}
+
+
+.fav-location:hover,
+.fav-location__remove-btn:hover {
+  cursor: pointer;
+  color: white;
+}

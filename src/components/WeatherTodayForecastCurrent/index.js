@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import moment from 'moment';
-import './index.css';
+import moment from "moment";
+import "./index.css";
 
 const WeatherTodayForecastCurrent = () => {
   const [loaded, setLoaded] = useState(false);
@@ -32,7 +32,7 @@ const WeatherTodayForecastCurrent = () => {
       </div>
       <div className="current__right-column">
         <time dateTime={todayForecast.startTime}>
-          {`${moment(todayForecast.startTime).format('dddd')} - ${todayForecast[0].shortForecast}`}
+          {`${moment(todayForecast.startTime).format("dddd")} - ${todayForecast[0].shortForecast}`}
         </time>
         <p className="current__temperature">
           {`${todayForecast[0].temperature} ${todayForecast[0].temperatureUnit}`}

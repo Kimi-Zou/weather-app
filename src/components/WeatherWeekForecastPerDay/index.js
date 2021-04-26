@@ -8,7 +8,7 @@ const WeatherWeekForecastPerDay = ({ dailyWeather }) => {
       <div className="weather-week__per-day-text-wrapper">
         <time className="weather-week_per-day-datetime">
           {`
-            ${moment(dailyWeather.startTime).format('MM/DD')} 
+            ${moment(dailyWeather.startTime).format("MM/DD")} 
             ${dailyWeather.isDaytime ? "Day" : "Night"}
           `}
         </time>

@@ -368,16 +368,17 @@ code {
     monospace;
 }
 
-div, p {
+div {
   font-size: 1.6rem;
 }
 
 p {
   margin-block-start: 0;
   margin-block-end: 0;
+  font-size: 1.6rem;
 }
 
-h2 {
+h1 {
   font-size: 1.4rem;
   font-weight: 500;
 }

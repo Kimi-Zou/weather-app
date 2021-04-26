@@ -1,6 +1,6 @@
-import './index.css';
-import WeatherTodayForecastCurrent from '../WeatherTodayForecastCurrent';
-import WeatherTodayForecastHourly from '../WeatherTodayForecastHourly';
+import "./index.css";
+import WeatherTodayForecastCurrent from "../WeatherTodayForecastCurrent";
+import WeatherTodayForecastHourly from "../WeatherTodayForecastHourly";
 
 const WeatherTodayForecast = () => {
   return (

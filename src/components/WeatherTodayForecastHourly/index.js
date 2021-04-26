@@ -1,7 +1,7 @@
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 import "./index.css";
-import WeatherTodayForecastPerHour from '../WeatherTodayForecastPerHour';
-import { useEffect, useState } from 'react';
+import WeatherTodayForecastPerHour from "../WeatherTodayForecastPerHour";
+import { useEffect, useState } from "react";
 
 const WeatherTodayForecastHourly = () => {
   const [loaded, setLoaded] = useState(false);

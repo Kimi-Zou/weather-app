@@ -1,8 +1,8 @@
-import './index.css';
+import "./index.css";
 
 const WeatherNav = ({ showToday, setShowToday }) => {
   return (
-    <div className='weather__navs'>
+    <div className="weather__navs">
       <button 
         type="button" 
         className={
