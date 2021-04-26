@@ -1,27 +1,31 @@
-import { Component, useEffect, useState } from 'react';
-import GooglePlacesAutocomplete, {geocodeByPlaceId} from 'react-google-places-autocomplete';
+import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
+import { setCurrentLocation } from '../../store/location';
 import './index.css';
 
 const Search = () => {
+  const dispatch = useDispatch();
+
   const [value, setValue] = useState(null);
-  // const [lat, setLat] = useState(null);
-  // const [lng, setLng] = useState(null);
 
   useEffect(() => {
     if (value) {
+      dispatch(setCurrentLocation(value.label));
+
       fetch(`https://maps.googleapis.com/maps/api/geocode/json?place_id=${value.value.place_id}&key=${process.env.REACT_APP_GOOGLE_API}`)
       .then(res => res.json())
       .then(data => fetch(`https://api.weather.gov/points/${data.results[0].geometry.location.lat.toFixed(4)},${data.results[0].geometry.location.lng.toFixed(4)}`))
       .then(res => res.json())
       .then(data => console.log(data))
     }
-  }, [value])
+  }, [dispatch, value])
 
   return (
     <div>
       <GooglePlacesAutocomplete
         className='search'
-        apiKey='***REMOVED***'
+        apiKey={process.env.REACT_APP_GOOGLE_API}
         autocompletionRequest={{
           country: ['us']
         }}

@@ -1,0 +1,13 @@
+.current-location {
+  margin: 0 auto;
+  width: 80%;
+  border-bottom: 1px solid gray;
+}
+
+.current-location--label {
+  color: white;
+}
+
+.current-location--content {
+  color: #333;
+}
