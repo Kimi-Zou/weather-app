@@ -26,7 +26,7 @@ const FavoriteLocation = () => {
   const removeFavLocation = (idx) => {
     const updatedFavLocations = [...favLocations];
     updatedFavLocations.splice(idx, 1);
-    localStorage.setItem("favLocations", JSON.stringify(favLocations));
+    localStorage.setItem("favLocations", JSON.stringify(updatedFavLocations));
     dispatch(setFavLocations(updatedFavLocations));
   }
 
