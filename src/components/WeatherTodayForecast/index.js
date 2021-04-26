@@ -1,19 +1,10 @@
-import { useSelector } from "react-redux";
 import './index.css';
+import WeatherTodayForecastCurrent from '../WeatherTodayForecastCurrent';
 
 const WeatherTodayForecast = () => {
-  const todayForecast = useSelector(state => state.weather.todayForecast);
-  console.log(todayForecast)
   return (
     <div className="weather-today__wrapper">
-      { 
-        todayForecast &&  
-        <img 
-          className="weather-today__current-weather-icon" 
-          src={todayForecast[0].icon} 
-          alt="weather icon"
-        />
-      }
+      <WeatherTodayForecastCurrent />
     </div>
   )
 }
