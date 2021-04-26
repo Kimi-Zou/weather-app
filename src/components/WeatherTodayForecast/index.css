@@ -1,4 +1,5 @@
-.weather-today__current-wrapper {
+.weather-today__wrapper {
   display: flex;
-  height: 20vh;
+  flex-direction: column;
+  padding-left: 30px;
 }
