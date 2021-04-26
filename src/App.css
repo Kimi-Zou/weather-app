@@ -4,11 +4,11 @@
 
 .location {
   background-color: #999;
-  width: 30%;
-  height: 100vh;
+  width: 20%;
+  min-height: 100vh;
 }
 
 .weather {
-  width: 70%;
-  height: 100vh;
+  width: 80%;
+  min-height: 100vh;
 }

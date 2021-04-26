@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   width: 8%;
-  margin: 10px 8px;
+  padding: 15px 8px;
+  border-bottom: 1px solid #eee;
 }
 
 .weather-today__per-hour-icon {
